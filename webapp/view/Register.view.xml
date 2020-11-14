@@ -64,7 +64,7 @@
        </Select>
 
         <Label text="Specialization" />
-       <Select>
+       <Select> 
        <core:Item key=""   text=""/>
          <layoutData>    
            <l:GridData span="L3 M3 S4" />

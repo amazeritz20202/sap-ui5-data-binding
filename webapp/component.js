@@ -11,7 +11,7 @@ sap.ui.define([
                 "type": "XML",
                 "async": true,
                 "id": "app"
-            }
+            } 
         },
         init : function () {
             // call the init function of the parent

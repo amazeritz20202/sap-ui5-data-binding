@@ -10,7 +10,7 @@ xmlns:mvc="sap.ui.core.mvc">
    <Label text="Enabled" />
     <CheckBox selected="{/enabled}"/>
  </form:SimpleForm>
-</Panel>
+</Panel> 
 
 
 </mvc:View>

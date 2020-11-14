@@ -7,5 +7,5 @@ sap.ui.define([
             // Show a native or vanailla JS alert
             alert("Hello there!");
         }
-    });
+    }); 
 });
