@@ -1,0 +1,89 @@
+<core:View 
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form">
+
+    <f:SimpleForm id="myform" 
+    	editable="false"
+		layout="ResponsiveGridLayout"
+			title="Registration Form"
+			labelSpanXL="4"
+			labelSpanL="2"
+			labelSpanM="2"
+			emptySpanL="0"
+			emptySpanM="0"
+			columnsL="1"
+			columnsM="1"
+    >
+    <f:content>
+    <core:Title text="Basic Information" />
+        <Label text="Name" />
+        <Input placeholder="First Name"/>
+        <Input placeholder="Middle Name">
+        <layoutData>
+           <l:GridData span="L3 M3 S4" />
+         </layoutData>
+         </Input>
+        <Input placeholder="Last Name">
+         <layoutData>
+           <l:GridData span="L3 M3 S4" />
+         </layoutData>
+         </Input>
+
+         <Label text="Gender" />
+       <RadioButtonGroup columns="4" width="100%">
+        <buttons>
+            <RadioButton id="rbMale" text="Male" />
+            <RadioButton id="rFemale" text="Female" />
+        </buttons>
+       </RadioButtonGroup>
+
+      <Label text="Date Of Birth" />
+      <DatePicker>
+         <layoutData>    
+           <l:GridData span="L3 M3 S4" />
+         </layoutData>
+      </DatePicker>
+      <Label text="Contact Number" />
+       <Input placeholder="Contact Number">
+         <layoutData>
+           <l:GridData span="L3 M3 S4" />
+         </layoutData>
+        </Input>
+
+
+     <core:Title text="Academic Details" />
+       <Label text="Joining Course" />
+       <Select>
+       <core:Item key=""   text=""/>
+         <layoutData>    
+           <l:GridData span="L3 M3 S4" />
+         </layoutData>
+       </Select>
+
+        <Label text="Specialization" />
+       <Select>
+       <core:Item key=""   text=""/>
+         <layoutData>    
+           <l:GridData span="L3 M3 S4" />
+         </layoutData>
+       </Select>
+       <Label text="Documents Submitted" />
+       <TextArea placeholder="Mentioned All Submitted Documents" rows="4" value="">
+         <layoutData>
+           <l:GridData span="L3 M3 S4" />
+         </layoutData>
+        </TextArea>
+
+       
+
+        </f:content>
+     
+    </f:SimpleForm>
+
+
+      
+   
+</core:View> 
